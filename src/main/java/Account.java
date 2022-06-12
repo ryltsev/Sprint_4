@@ -7,17 +7,17 @@ public class Account {
 
 
     public boolean checkNameToEmboss() {
-        if(name == null) {
+        if (name == null) {
             return false;
-        }else
-        return name.length() >= 3 &&
-                name.length() <= 19 &&
-                name.length() - name.replace(" ", "").length() == 1 &&
-                !name.startsWith(" ") &&
-                !name.endsWith(" ");
-        }
-
+        } else
+            return name.length() >= 3 &&
+                    name.length() <= 19 &&
+                    name.length() - name.replace(" ", "").length() == 1 &&
+                    !name.startsWith(" ") &&
+                    !name.endsWith(" ");
     }
+
+}
 
 /*
              Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.

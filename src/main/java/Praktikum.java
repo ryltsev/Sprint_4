@@ -1,6 +1,15 @@
+import java.util.Scanner;
+
 public class Praktikum {
     public static void main(String[] args) {
-        Account account = new Account("Тимоти Шаломе");
+
+        /*String firstAndSecondName = "Тимоти Шаломе";
+        Account account = new Account(firstAndSecondName);
+        account.checkNameToEmboss();*/
+
+        Scanner console = new Scanner(System.in);
+        String firstAndSecondName = console.nextLine();
+        Account account = new Account(firstAndSecondName);
         account.checkNameToEmboss();
     }
 }

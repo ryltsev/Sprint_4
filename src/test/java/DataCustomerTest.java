@@ -34,6 +34,7 @@ public class DataCustomerTest {
                     {"ТимотиШаламе", false},
             };
         }
+
         @Test
         public void validName() {
             Account account = new Account(name);
